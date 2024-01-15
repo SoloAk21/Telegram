@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Telegram Clone</string>
+    <string name="telegram">Telegram</string>
+    <string name="motivation">The world\'s <b>fastest</b> messaging app. \nIt is free and secure.</string>
+    <string name="start_messaging">Start Messaging</string>
+    <string name="phone_number_direction">please confirm your country code \nand enter your phone number.</string>
+    <string name="sent_code1">We\'ve sent the code to the Telegram app for \n </string>
+    <string name="sent_code2">on your other device </string>
+
+    <string name="title_activity_home_page">Telegram</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_user">User</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_gallery">Gallery</string>
+</resources>

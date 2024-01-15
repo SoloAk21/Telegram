@@ -1,0 +1,103 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:text="Your Phone Number"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/phone_number_direction"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    >
+
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+      android:layout_gravity="top"
+        android:background="@drawable/border"
+        android:gravity="center"
+        app:ccp_contentColor="@android:color/black"
+        app:ccp_countryAutoDetectionPref="LOCALE_NETWORK"
+        app:ccp_showFlag="false"
+        app:ccp_showNameCode="false"
+        app:ccp_showPhoneCode="true"
+
+        android:layout_marginTop="6dp"
+
+        android:layout_marginRight="-1dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textInputPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:layout_marginLeft="10dp"
+        >
+        <EditText
+            android:id="@+id/inputMobile"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:layout_height="match_parent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
+
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="left"
+    android:text=" Sync Contacts"/>
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp">
+       <ImageButton
+           android:id="@+id/buttonGetOtp"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:src="@drawable/arrow_forward"
+           android:layout_gravity="right"
+           android:background="@drawable/circle_btn"/>
+
+       <ProgressBar
+           android:id="@+id/progressBar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:indeterminateTint="@color/primary"
+           android:layout_gravity="right"
+           android:progress="50"
+           android:visibility="gone"
+           />
+
+   </FrameLayout>
+
+</LinearLayout>
