@@ -69,7 +69,7 @@ public class StartUpActivity extends AppCompatActivity {
     }
 
     private void startHomePageActivity() {
-        Intent intent = new Intent(getApplicationContext(), HomePageActivity.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
         finish();
     }

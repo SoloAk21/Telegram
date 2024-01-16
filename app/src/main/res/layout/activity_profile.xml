@@ -70,7 +70,7 @@
                         android:layout_marginLeft="10dp"
                         android:gravity="center_vertical"
                         android:text="Online"
-                        android:textColor="@color/selected_tab_text_color"
+                        android:textColor="@color/white"
                         android:textSize="15dp" />
 
                 </LinearLayout>

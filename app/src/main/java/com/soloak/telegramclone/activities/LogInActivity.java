@@ -63,6 +63,7 @@ final CountryCodePicker ccp = findViewById(R.id.ccp);
                                 buttonGetOtp.setVisibility(View.VISIBLE);
 
                                 Toast.makeText(LogInActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                                System.out.println(e.getMessage());
                             }
 
                             @Override

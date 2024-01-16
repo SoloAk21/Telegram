@@ -87,7 +87,7 @@ public class VerifyOtpActivity extends AppCompatActivity {
                         progressBar.setVisibility(View.GONE);
                         Toast.makeText(VerifyOtpActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                         // Example: Start HomePageActivity
-                        Intent intent = new Intent(VerifyOtpActivity.this, HomePageActivity.class);
+                        Intent intent = new Intent(VerifyOtpActivity.this, MainActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(intent);
                     } else {
